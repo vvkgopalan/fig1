@@ -109,6 +109,33 @@ const Home: NextPage = () => {
               "e.g. Senior Developer Advocate @vercel. Tweeting about web development, AI, and React / Next.js. Writing nutlope.substack.com."
             }
           />
+
+          <div className="flex mt-10 items-center space-x-3">
+            <Image
+              src="/2-black.png"
+              width={30}
+              height={30}
+              alt="2 icon"
+              className="mb-5 sm:mb-0"
+            />
+            <p className="text-left font-medium">
+              Copy your current bio{" "}
+              <span className="text-slate-500">
+                (or write a few sentences about yourself)
+              </span>
+              .
+            </p>
+          </div>
+          <textarea
+            value={bio}
+            onChange={(e) => setBio(e.target.value)}
+            rows={4}
+            className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
+            placeholder={
+              "e.g. Senior Developer Advocate @vercel. Tweeting about web development, AI, and React / Next.js. Writing nutlope.substack.com."
+            }
+          />
+
           <div className="flex mb-5 items-center space-x-3">
             <Image src="/2-black.png" width={30} height={30} alt="1 icon" />
             <p className="text-left font-medium">Select your vibe.</p>
